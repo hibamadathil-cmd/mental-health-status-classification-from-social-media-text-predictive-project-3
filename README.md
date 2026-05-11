@@ -14,29 +14,29 @@ A machine learning pipeline that classifies social media posts into 5 mental hea
 ## 🗂️ Project Pipeline
 | Stage | Description | Member |
 |-------|-------------|--------|
-| 1 | Problem definition & literature review | Member 1 |
-| 2 | Data collection & understanding | Member 1 |
-| 3 | Preprocessing & cleaning | Member 1 |
-| 4 | Exploratory data analysis | Member 2 |
-| 5 | Feature engineering & selection | Member 2 |
-| 6 | BERT fine-tuning + TF-IDF/SVM baseline | Member 2 |
-| 7 | Evaluation: sensitivity & specificity | **Member 3 (Aleena)** |
-| 8 | Interpretation & explainability | **Member 3 (Aleena)** |
-| 9 | Streamlit deployment | **Member 3 (Aleena)** |
-| 10 | Docs & GitHub | **Member 3 (Aleena)** |
+| 1 | Problem definition & literature review | Hiba |
+| 2 | Data collection & understanding | Hiba |
+| 3 | Preprocessing & cleaning | Hiba |
+| 4 | Exploratory data analysis | Manasa |
+| 5 | Feature engineering & selection | Manasa |
+| 6 | BERT fine-tuning + TF-IDF/SVM baseline | Manasa |
+| 7 | Evaluation: sensitivity & specificity | Aleena |
+| 8 | Interpretation & explainability | Aleena |
+| 9 | Streamlit deployment | Aleena |
+| 10 | Docs & GitHub | Aleena |
 
 ## 📊 Model Results
 | Model | Accuracy | F1 (weighted) |
 |-------|----------|---------------|
 | TF-IDF + SVM | 81.3% | 81.4% |
-| BERT (fine-tuned) | See Member 2 notebook | See Member 2 notebook |
+| BERT (fine-tuned) | See Manasa's notebook | See Manasa's notebook |
 
-## 🔍 Explainability (Stage 8 — Member 3)
+## 🔍 Explainability (Stage 8 — Aleena)
 - **LIME**: Word-level explanations for individual predictions per class
 - **TF-IDF weights**: Global most important words per class from SVM coefficients
 - **Word clouds**: Visual summary of class-specific vocabulary
 
-## 🚀 Run the Streamlit App (Stage 9 — Member 3)
+## 🚀 Run the Streamlit App (Stage 9 — Aleena)
 ```bash
 pip install streamlit scikit-learn pandas numpy
 streamlit run app.py
@@ -44,18 +44,18 @@ streamlit run app.py
 
 ## 📁 Repository Structure
 ```
-├── cleaned_dataset.csv                    # Preprocessed dataset (Member 1)
+├── cleaned_dataset.csv                    # Preprocessed dataset (Hiba)
 ├── Dataset.zip                            # Raw dataset
-├── Stage1_Problem_Definition_and_Literature_Review.md  (Member 1)
-├── Stage2_Data_Collection_and_Understanding.md         (Member 1)
-├── Stage3_Preprocessing_and_Cleaning.md                (Member 1)
-├── Member_2_—_Model_Development_&_Evaluation.ipynb     (Member 2)
-├── mental_health_classifier.ipynb                      (Member 2)
-├── Stage8_Explainability.ipynb            # LIME + word clouds (Member 3)
-├── Stage9_Deployment.md                   # Deployment guide   (Member 3)
-├── Stage10_Summary.md                     # Project summary    (Member 3)
-├── app.py                                 # Streamlit app      (Member 3)
-└── README.md                              # This file          (Member 3)
+├── Stage1_Problem_Definition_and_Literature_Review.md  (Hiba)
+├── Stage2_Data_Collection_and_Understanding.md         (Hiba)
+├── Stage3_Preprocessing_and_Cleaning.md                (Hiba)
+├── Member_2_—_Model_Development_&_Evaluation.ipynb     (Manasa)
+├── mental_health_classifier.ipynb                      (Manasa)
+├── Stage8_Explainability.ipynb            # LIME + word clouds  (Aleena)
+├── Stage9_Deployment.md                   # Deployment guide    (Aleena)
+├── Stage10_Summary.md                     # Project summary     (Aleena)
+├── app.py                                 # Streamlit app       (Aleena)
+└── README.md                              # This file           (Aleena)
 ```
 
 ## 🛠️ Tech Stack
@@ -65,8 +65,8 @@ streamlit run app.py
 - Streamlit for deployment
 
 ## 👥 Team
-| Member | Stages | GitHub |
-|--------|--------|--------|
-| Member 1 | Stages 1–3 | — |
-| Member 2 | Stages 4–6 | — |
-| **Member 3** | **Stages 7–10** | **Aleena11062004** |
+| Name | Stages | Role |
+|------|--------|------|
+| Hiba | Stages 1–3 | Data collection, preprocessing & problem definition |
+| Manasa | Stages 4–6 | EDA, feature engineering & model development |
+| Aleena | Stages 7–10 | Evaluation, explainability, deployment & docs |
