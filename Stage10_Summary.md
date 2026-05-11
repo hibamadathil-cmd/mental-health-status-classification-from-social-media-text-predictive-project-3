@@ -1,4 +1,5 @@
 # Stage 10 — Project Summary & Findings
+**Contributor: Member 3 — Aleena (Aleena11062004)**
 
 ## Project Goal
 Classify social media text into 5 mental health categories using NLP and machine learning.
@@ -12,7 +13,7 @@ Classify social media text into 5 mental health categories using NLP and machine
 | Model | Accuracy | F1 Score |
 |-------|----------|----------|
 | TF-IDF + LinearSVC | 81.3% | 81.4% |
-| BERT (fine-tuned) | See Member 2 notebook | See Member 2 notebook |
+| BERT (fine-tuned) | See Member 2 notebook | — |
 
 ## Key Findings from Explainability (Stage 8)
 - **Stress (Class 0)**: Top words — stress, stressful, meditation, study
@@ -21,17 +22,17 @@ Classify social media text into 5 mental health categories using NLP and machine
 - **Personality Disorder (Class 3)**: Top words — avpd, social, avoidance, people
 - **Anxiety (Class 4)**: Top words — anxiety, panic, ocd, heart, chest
 
-## Contributions (Member 3 — Aleena)
+## Member 3 Contributions (Aleena)
 | Stage | Work Done |
 |-------|-----------|
-| 7 | Model evaluation: sensitivity, specificity, ROC/AUC |
-| 8 | LIME explanations, TF-IDF weight charts, word clouds |
-| 9 | Streamlit web app deployment |
-| 10 | Documentation, README, GitHub push |
+| 7 | Model evaluation: sensitivity, specificity, ROC/AUC, BERT vs SVM comparison |
+| 8 | LIME word-level explanations, TF-IDF weight charts, word clouds per class |
+| 9 | Streamlit web app — real-time mental health text classification |
+| 10 | README documentation, project summary, GitHub contribution |
 
-## Files Added
+## Files Added by Member 3
 - `app.py` — Streamlit application
-- `Stage8_Explainability.ipynb` — Explainability analysis
+- `Stage8_Explainability.ipynb` — Full explainability analysis notebook
 - `Stage9_Deployment.md` — Deployment guide
 - `Stage10_Summary.md` — This file
-- `README.md` — Updated project README
+- `README.md` — Full project README
