@@ -63,6 +63,8 @@ streamlit run app.py
 - BERT (bert-base-uncased), TF-IDF + LinearSVC
 - LIME for explainability
 - Streamlit for deployment
+- ##app link
+- https://6yfyvnqza8mhswzv3jy97t.streamlit.app/
 
 ## 👥 Team
 | Name | Stages | Role |
