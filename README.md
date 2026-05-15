@@ -73,3 +73,14 @@ streamlit run app.py
 | Hiba | Stages 1–3 | Data collection, preprocessing & problem definition |
 | Manasa | Stages 4–6 | EDA, feature engineering & model development |
 | Aleena | Stages 7–10 | Evaluation, explainability, deployment & docs |
+
+
+## 🌐 Live Demo
+> The app was deployed and tested via Streamlit + localtunnel on Google Colab.
+> To run it yourself:
+> ```bash
+> pip install streamlit scikit-learn pandas numpy
+> streamlit run app.py
+> ```
+> The model (`svm_model.pkl`) and label encoder (`le.pkl`) are included in this repo.
+> On first run without the pkl files, the app trains the SVM automatically from `cleaned_dataset.csv`.
