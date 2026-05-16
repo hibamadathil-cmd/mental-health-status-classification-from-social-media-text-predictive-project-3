@@ -12,6 +12,9 @@ A machine learning pipeline that classifies social media posts into 5 mental hea
 | 4 | 😨 Anxiety Disorder |
 
 ## 🗂️ Project Pipeline
+
+![Pipeline Diagram](mental_health_pipeline_diagram.svg)
+
 | Stage | Description | Member |
 |-------|-------------|--------|
 | 1 | Problem definition & literature review | Hiba |
