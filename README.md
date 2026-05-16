@@ -76,6 +76,14 @@ streamlit run app.py
 
 
 ## 🌐 Live Demo
+
+## 📸 App Screenshots
+
+**Main Interface**
+![Mental Health Classifier](mental_health_1.png)
+
+**Prediction Result**
+![Prediction Output](mental_health_2.png)
 > The app was deployed and tested via Streamlit + localtunnel on Google Colab.
 > To run it yourself:
 > ```bash
