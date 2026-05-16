@@ -70,7 +70,7 @@ streamlit run app.py
 ## 👥 Team
 | Name | Stages | Role |
 |------|--------|------|
-| Hiba | Stages 1–3 | Data collection, preprocessing & problem definition |
+| Hiba | Stages 1–3 | Data collection, preprocessing & problem definition ,ppt|
 | Manasa | Stages 4–6 | EDA, feature engineering & model development |
 | Aleena | Stages 7–10 | Evaluation, explainability, deployment & docs |
 
