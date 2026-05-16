@@ -84,3 +84,63 @@ streamlit run app.py
 > ```
 > The model (`svm_model.pkl`) and label encoder (`le.pkl`) are included in this repo.
 > On first run without the pkl files, the app trains the SVM automatically from `cleaned_dataset.csv`.
+
+Member 2
+# Mental Health Status Classification — Model Development & Evaluation
+
+This notebook covers the full ML pipeline for classifying mental health status
+from social media text, from exploratory analysis through to model evaluation.
+
+## Pipeline Overview
+
+### Stage 4 — Exploratory Data Analysis (EDA)
+- Class distribution (bar chart + pie chart)
+- Text length analysis: word count, character count, sentence count
+- Per-class word clouds
+
+### Stage 5 — Feature Engineering
+- 16 hand-crafted linguistic features per sample:
+  word count, character count, punctuation, capitalization ratio,
+  negation count, stopword ratio, unique word ratio, and
+  sentiment scores via VADER and TextBlob
+- Feature importance ranking using a Random Forest classifier
+
+### Stage 6A — TF-IDF + LinearSVC (Baseline)
+- TF-IDF vectorization (unigrams + bigrams, up to 100k features)
+- LinearSVC with calibrated probabilities
+- Hyperparameter tuning via GridSearchCV (C in [0.01, 0.1, 1, 5, 10])
+- 80/10/10 stratified train/val/test split
+
+### Stage 6B — BERT Fine-tuning
+- `bert-base-uncased` fine-tuned for sequence classification
+- 4 epochs, batch size 16, AdamW optimizer with linear warmup
+- Best checkpoint saved based on validation F1
+
+### Stage 7 — Evaluation
+- Sensitivity, Specificity, Precision, NPV, and F1 per class (One-vs-Rest)
+- ROC curves with per-class AUC for both models
+- Side-by-side comparison: TF-IDF+SVM vs. BERT across all metrics
+
+## Output Artifacts
+All charts and models are saved to `/content/outputs/`:
+- EDA plots, feature importance chart, confusion matrices, ROC curves
+- Trained SVM pipeline (`.pkl`) and BERT best checkpoint
+- `stage7_all_results.json` with final metric summary
+
+## Dataset
+Loaded from `cleaned_dataset.csv` (columns: `clean_text`, `target`).
+Source repo: [hibamadathil-cmd/mental-health-status-classification-from-social-media-text-predictive-project-3](https://github.com/hibamadathil-cmd/mental-health-status-classification-from-social-media-text-predictive-project-3)
+
+## Requirements
+`pandas`, `numpy`, `matplotlib`, `seaborn`, `wordcloud`, `textblob`,
+`vaderSentiment`, `scikit-learn`, `transformers`, `torch`
+
+
+
+
+
+
+
+
+
+
