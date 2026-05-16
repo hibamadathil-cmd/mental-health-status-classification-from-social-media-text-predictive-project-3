@@ -22,34 +22,6 @@ Classify social media text into 5 mental health categories using NLP and machine
 - **Personality Disorder (Class 3)**: Top words — avpd, social, avoidance, people
 - **Anxiety (Class 4)**: Top words — anxiety, panic, ocd, heart, chest
 
-- Member 1 Contributions (Hiba)
-Stage	Work Done
-1	Problem definition, project objectives, and literature review on mental health text classification
-2	Data collection, dataset understanding, class distribution analysis, and dataset organization
-3	Data preprocessing and cleaning including text normalization, stopword removal, tokenization, and preparation of cleaned dataset
-Key Contributions by Hiba
-Defined the overall project problem statement and research direction for mental health classification from social media text.
-Collected and organized the dataset used for training and evaluation.
-Performed preprocessing steps such as:
-Lowercasing text
-Removing punctuation, URLs, and special characters
-Stopword removal
-Tokenization and text normalization
-Generated the final cleaned dataset used for model training and deployment.
-Prepared documentation for:
-Problem definition
-Literature review
-Data understanding
-Data preprocessing pipeline
-Files Added by Member 1
-cleaned_dataset.csv — Final cleaned and preprocessed dataset
-Dataset.zip — Raw dataset files
-Stage1_Problem_Definition_and_Literature_Review.md
-Stage2_Data_Collection_and_Understanding.md
-Stage3_Preprocessing_and_Cleaning.md
-
-
-
 ## Member 3 Contributions (Aleena)
 | Stage | Work Done |
 |-------|-----------|
