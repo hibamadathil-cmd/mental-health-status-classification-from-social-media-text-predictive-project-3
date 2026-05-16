@@ -23,7 +23,7 @@ A machine learning pipeline that classifies social media posts into 5 mental hea
 | 7 | Evaluation: sensitivity & specificity | Aleena |
 | 8 | Interpretation & explainability | Aleena |
 | 9 | Streamlit deployment | Aleena |
-| 10 | Docs & GitHub | Aleena |
+
 
 ## 📊 Model Results
 | Model | Accuracy | F1 (weighted) |
