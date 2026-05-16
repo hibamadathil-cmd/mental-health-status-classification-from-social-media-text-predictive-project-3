@@ -31,12 +31,12 @@ A machine learning pipeline that classifies social media posts into 5 mental hea
 | TF-IDF + SVM | 81.3% | 81.4% |
 | BERT (fine-tuned) | See Manasa's notebook | See Manasa's notebook |
 
-## 🔍 Explainability (Stage 8 — Aleena)
+## 🔍 Explainability 
 - **LIME**: Word-level explanations for individual predictions per class
 - **TF-IDF weights**: Global most important words per class from SVM coefficients
 - **Word clouds**: Visual summary of class-specific vocabulary
 
-## 🚀 Run the Streamlit App (Stage 9 — Aleena)
+## 🚀 Run the Streamlit App
 ```bash
 pip install streamlit scikit-learn pandas numpy
 streamlit run app.py
